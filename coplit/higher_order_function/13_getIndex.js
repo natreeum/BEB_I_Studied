@@ -1,11 +1,11 @@
 function getIndex(arr, num) {
   // TODO: 여기에 코드를 작성합니다.
-  let sum = 0;
-  function func(init, el) {
-    if (num > el) init = init + 1;
-    return init;
+  let init = 0;
+  function func(sum, el) {
+    if (num > el) sum = sum + 1;
+    return sum;
   }
-  return arr.reduce(func, sum);
+  return arr.reduce(func, init);
 }
 
 let output = getIndex([5, 4, 1, 3], 2);
