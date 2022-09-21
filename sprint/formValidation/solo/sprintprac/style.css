@@ -1,0 +1,15 @@
+.hide {
+  display: none;
+}
+
+.mismatch-message {
+  color: red;
+}
+
+.match-message {
+  color: green;
+}
+
+.success-message {
+  color: green;
+}

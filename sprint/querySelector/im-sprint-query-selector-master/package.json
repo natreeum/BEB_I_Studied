@@ -1,0 +1,24 @@
+{
+  "name": "query-selector",
+  "version": "1.0.0",
+  "author": "Phillip Choi <jaeja.phil@gmail.com>",
+  "description": "query-selector sprint",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codestates/im-sprint-query-selector"
+  },
+  "scripts": {
+    "test": "mocha test/index.test.js --reporter mocha-multi-reporters --reporter-options configFile=multi-reporters.json",
+    "report": "mocha test/index.test.js --timeout 50000 --exit --sort --reporter @mochajs/json-file-reporter",
+    "submit": "codestates"
+  },
+  "devDependencies": {
+    "@mochajs/json-file-reporter": "^1.3.0",
+    "chai": "^4.2.0",
+    "codestates-assignment-manager": "^1.8.0",
+    "jsdom": "^16.4.0",
+    "mocha": "^8.2.0",
+    "mocha-multi-reporters": "^1.5.1"
+  }
+}
