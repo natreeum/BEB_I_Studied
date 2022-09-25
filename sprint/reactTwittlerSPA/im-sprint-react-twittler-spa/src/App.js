@@ -12,21 +12,20 @@ const App = () => {
   return (
     <div>
       {/* TODO - BrowserRouter 컴포넌트를 작성합니다. */}
-      <BrowserRouter>
-        <div className="App">
-          <main>
-            <Sidebar />
-            <section className="features">
-              {/* TODO - Routes와 Route 컴포넌트를 이용하여 경로(path)를 설정하고 Tweets, Mypage, About 컴포넌트를 연결합니다. */}
-              <Routes>
-                <Route path="/" element={<Tweets />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/mypage" element={<MyPage />} />
-              </Routes>
-            </section>
-          </main>
-        </div>
-      </BrowserRouter>
+
+      <div className="App">
+        <main>
+          <Sidebar />
+          <section className="features">
+            {/* TODO - Routes와 Route 컴포넌트를 이용하여 경로(path)를 설정하고 Tweets, Mypage, About 컴포넌트를 연결합니다. */}
+            <Routes>
+              <Route path="/" element={<Tweets />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/mypage" element={<MyPage />} />
+            </Routes>
+          </section>
+        </main>
+      </div>
     </div>
   );
 };
