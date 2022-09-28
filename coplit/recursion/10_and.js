@@ -1,6 +1,5 @@
 function and(arr) {
   if (arr.length === 0) return true;
-  if (arr.length === 1) return arr[0];
   else {
     const tArr = [...arr];
     tArr.splice(0, 1);
@@ -9,4 +8,4 @@ function and(arr) {
   }
 }
 
-console.log(and([1, 1, 1, 1, 0, 1]));
+console.log(and([1, false, 1, 1, 1, 1]));
