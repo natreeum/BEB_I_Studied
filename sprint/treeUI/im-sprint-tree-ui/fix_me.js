@@ -179,12 +179,11 @@ function createTreeView(menu, currentNode) {
       //체크박스생성
       const list = document.createElement("li");
       const span = document.createElement("span");
-      const node = document.createTextNode(i.name);
       const chkBox = document.createElement("input");
       chkBox.setAttribute("type", "checkbox");
       list.appendChild(chkBox);
       list.appendChild(span);
-      span.appendChild(node);
+      span.textContent = i.name;
       currentNode.appendChild(list);
       //자식노드생성
       const ul = document.createElement("ul");
