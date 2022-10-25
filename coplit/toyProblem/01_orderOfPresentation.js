@@ -1,15 +1,15 @@
 function orderOfPresentation(N, K) {
   // TODO: 여기에 코드를 작성합니다.
-  // N : nums length
-  // arr : finding arr
   let result = 0;
   let nums = []; //1,2,3,4,5
 
+  // factorial function
   function fact(num) {
     if (num <= 1) return num;
     return fact(num - 1) * num;
   }
 
+  // 1부터 N까지 순서대로 들어있는 배열
   for (let i = 1; i <= N; i++) {
     nums.push(i);
   }
