@@ -1,3 +1,5 @@
 **/.DS_Store
 pairReview/
 node_modules
+cert.pem
+key.pem
