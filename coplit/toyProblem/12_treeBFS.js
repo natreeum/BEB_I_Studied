@@ -2,14 +2,14 @@ let bfs = function (node) {
   // TODO: 여기에 코드를 작성합니다.
   const result = [];
   const unvisited = [];
-  const bfs = (n) => {
+  const bfs_pushToResult = (n) => {
     unvisited.splice(unvisited.indexOf(n), 1);
     result.push(n.value);
     n.children.forEach((e) => unvisited.push(e));
-    unvisited.forEach((e) => bfs(e));
+    unvisited.forEach((e) => bfs_pushToResult(e));
   };
 
-  bfs(node);
+  bfs_pushToResult(node);
   return result;
 };
 
